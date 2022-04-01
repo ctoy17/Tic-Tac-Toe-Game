@@ -1,6 +1,32 @@
-table {
-    color: purple;
-    width: 100%;
-    border: 1px solid black;
-    border-collapse: collapse;
+
+
+
+
+
+/* table style - removes border, centers horizontally and shifts down */
+table{
+  border-collapse: collapse;
+  height: 500px;
+  width: 500px;
+  margin: 300px auto;
   }
+
+/* row2 style - creates a border on top and bottom of the second row, to create horizontal lines of game*/
+.row2{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+/* #sq2,5,8, - creates left and right borders for the middle column to add the vertical lines of game board */
+#sq2{
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+#sq5{
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+#sq8{
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
