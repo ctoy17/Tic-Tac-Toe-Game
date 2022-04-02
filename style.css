@@ -1,32 +1,42 @@
-
-
-
-
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 /* table style - removes border, centers horizontally and shifts down */
-table{
-  border-collapse: collapse;
-  height: 500px;
-  width: 500px;
-  margin: 300px auto;
-  }
+td {
+  height: 200px;
+  width: 200px;
+}
+
+
+/* marker */
+td div {
+  margin: 0 auto;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;  
+}
 
 /* row2 style - creates a border on top and bottom of the second row, to create horizontal lines of game*/
-.row2{
+
+.row2 td{
   border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
-
 /* #sq2,5,8, - creates left and right borders for the middle column to add the vertical lines of game board */
-#sq2{
+#sq1{
   border-left: 1px solid black;
   border-right: 1px solid black;
 }
-#sq5{
+#sq4{
   border-left: 1px solid black;
   border-right: 1px solid black;
 }
-#sq8{
+#sq7{
   border-left: 1px solid black;
   border-right: 1px solid black;
 }
+
