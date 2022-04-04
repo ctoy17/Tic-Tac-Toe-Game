@@ -1,9 +1,9 @@
 
 /*constants - player color and wins*/
 const play = {
-    '1': 'yellow',
-    '-1': 'lime',
-    'null': 'white'
+    '1': 'Salmon',
+    '-1': 'darkslategrey',
+    'null': 'transparent'
 };
 const winCombos = [
     [0, 1, 2],
@@ -23,7 +23,7 @@ let winner;
 
 /*----- cached element references ; will be frequently used-----*/
 const squares = document.querySelectorAll('td div');
-const result = document.querySelector('h1');
+const result = document.querySelector('h2');
 
 /*----- event listeners -----*/
 document.querySelector('table').addEventListener('click', playerChoice);
@@ -50,7 +50,7 @@ function render() {
     }
 }
 function playerChoice(evt) {
-    const ind = parseInt(evt.target.id.replace('sq', ''));
+    const ind = (evt.target.id.replace('sq', ''));
     if (board[ind] || winner) {
         return;
     }
@@ -59,6 +59,8 @@ function playerChoice(evt) {
     winner = whoWon();
     render();
 }
+
+
 /* loop through all winning combinations. total of board positions in the index, and if equal to 3, set winner. if not check tie */
 function whoWon() {
     for (let i = 0; i < winCombos.length; i++) {
@@ -66,8 +68,13 @@ function whoWon() {
             return board[winCombos[i][0]];
     } 
 }
-    if (board.includes(null)) {
+    if (board.includes(null)) {   /* if there are open boxes*/
         return null;
     }
     return 'T'; /* if there are no more nulls, return tie */
     }
+
+
+
+
+

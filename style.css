@@ -1,42 +1,64 @@
+html{
+  background-image: url("https://i.imgur.com/cpxMQtl.png"); 
+  background-color: rgba(255, 255, 255, 0.3);
+  background-blend-mode: overlay;
+}
 body {
+  font-family: 'Amatic SC', cursive;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
-
+h1{
+  font-size: 82px;
+  height:min-content;
+  margin: 5px;
+  border-bottom: 10px solid darkslategrey;
+}
+h2{
+  font-size: 64;
+  padding: 10px;
+  border-top: 5px solid darksalmon;
+}
 /* table style - removes border, centers horizontally and shifts down */
-td {
-  height: 200px;
+td{
   width: 200px;
+  height: 200px;
+  opacity: 90%;
 }
 
-
-/* marker */
 td div {
   margin: 0 auto;
-  height: 50px;
-  width: 50px;
-  border-radius: 100%;  
+  height: 70px;
+  width: 70px;
 }
 
 /* row2 style - creates a border on top and bottom of the second row, to create horizontal lines of game*/
 
 .row2 td{
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
 }
 /* #sq2,5,8, - creates left and right borders for the middle column to add the vertical lines of game board */
 #sq1{
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border-left: 4px solid black;
+  border-right: 4px solid black;
 }
 #sq4{
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border-left: 4px solid black;
+  border-right: 4px solid black;
 }
 #sq7{
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border-left: 4px solid black;
+  border-right: 4px solid black;
 }
 
+button{
+ background-color: honeydew;
+}
+button:hover{
+  background-color: darkslategrey;
+  color: white;
+}
